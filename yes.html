@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // uppgift 1
+        document.getElementById("title").style.backgroundColor = "red"
+
+    
+        // uppgift 2
+        function text_change(){
+            document.getElementById("demo").innerHTML = "Hej"
+        }
+        
+        // uppgift 3
+        function multiply_by_five(nuber_array){
+            new_array = []
+            for (num of nuber_array){
+                new_array.push(num*5)
+            }
+            return new_array
+        }
+
+        // uppgift 4
+
+        function multiply_both(num_1, num_2){
+            return num_1 * num_2
+        }   
+
+        // uppgift 5
+        function logggit(){
+            console.log(document.getElementById("input").innerHTML)
+        }
+
+    </script>
+    <p id="demo"></p>
+
+
+    <h1 id="title" style="color:aliceblue">hello</h1>
+
+    <form>
+        <textarea name="area" id="input" cols="30" rows="10"></textarea>
+        <button onclick="logggit()"></button>
+    </form>
+
+</body>
+</html>
